@@ -24,5 +24,14 @@ const StyledNav = styled.nav`
         display: flex;
         justify-content: center;
         gap: 30px;
+        margin: 13px 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+        ul {
+            display: none;
+        }
+        
     }
 `
+

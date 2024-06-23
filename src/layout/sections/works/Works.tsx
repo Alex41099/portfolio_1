@@ -1,5 +1,5 @@
 import React from 'react';
-import {Menu} from "../../../components/menu/Menu";
+import {Menu} from "../../header/menu/Menu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./Work";
 import photoProj1 from "../../../accets/images/proj-1.webp"
