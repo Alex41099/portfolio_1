@@ -9,30 +9,18 @@ import { S } from './Footer_Styles';
 const styledA = [
     {
         href: "#",
-        width: "21",
-        height: "21",
-        viewBox: "0 0 21 21",
         iconId: "instagramSvg"
     },
     {
         href: "#",
-        width: "21",
-        height: "21",
-        viewBox: "0 0 21 21",
         iconId: "telegramSvg"
     },
     {
         href: "#",
-        width: "21",
-        height: "21",
-        viewBox: "0 0 21 21",
         iconId: "vkSvg"
     },
     {
         href: "#",
-        width: "21",
-        height: "21",
-        viewBox: "0 0 21 21",
         iconId: "linkedinSvg"
     }
 ]
@@ -45,7 +33,7 @@ export const Footer = () => {
                 <S.StyledUl>
                     {styledA.map((s, index) => {
                         return <li>
-                            <S.StyledA href={s.href}><Icon width={s.width} height={s.height} viewBox={s.viewBox}
+                            <S.StyledA key={index} href={s.href}><Icon width={"21"} height={"21"} viewBox={"0 0 21 21"}
                                                     iconId={s.iconId}/></S.StyledA>
                             </li>})}
                 </S.StyledUl>
