@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {SectionTitle} from "../../../components/SectionTitle";
+import {SectionTitle, StyledH2} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
+import {theme} from "../../../styles/Theme";
 
 export const Slogan = () => {
     return (
@@ -17,5 +18,12 @@ export const Slogan = () => {
 
 const StyledSection = styled.section`
     
+    ${StyledH2} {
+        margin-bottom: 78px;
+    }
+
+    @media ${theme.media.mobile} {
+        padding: 68px 0 69px;
+    }
 `
 

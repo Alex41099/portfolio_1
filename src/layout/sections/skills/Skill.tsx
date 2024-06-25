@@ -25,8 +25,16 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledDiv = styled.div`
-    width: 380px;
+    min-width: 330px;
+    flex-grow: 1;
     min-height: 340px;
+    
+    margin: 30px 0 -30px;
+
+    @media ${theme.media.mobile} {
+        min-height: 280px;
+        margin: 10px 0 50px;
+    }
 
 `
 
@@ -46,6 +54,7 @@ export const IconWrapper = styled.span`
         background-color: rgba(255, 255, 255, 0.10);
         z-index: -1;
     }
+    
 `
 
 const StyledH3 = styled.h3`
@@ -56,6 +65,7 @@ const StyledH3 = styled.h3`
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+    
 
 `
 
@@ -66,5 +76,6 @@ const StyledP = styled.p`
     line-height: normal;
     
     max-width: 340px;
+    
 
 `

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../styles/Theme";
+import {font} from "../styles/Common";
 
 type SectionTitlePropsType = {
     title: string
@@ -15,13 +16,11 @@ export const SectionTitle = (props: SectionTitlePropsType) => {
 };
 
 
-const StyledH2 = styled.h2`
+export const StyledH2 = styled.h2`
     text-align: center;
     margin-bottom: 90px;
-
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 36px;
-    font-weight: 600;
+    
+    ${font({family: '"Josefin Sans", sans-serif;', weight: 600, Fmax: 36, Fmin: 30})}
     letter-spacing: 5px;
     
     position: relative;
@@ -37,5 +36,7 @@ const StyledH2 = styled.h2`
         left: 50%;
         transform: translateX(-50%);
         
-    }  
+    }
+    
+
 `

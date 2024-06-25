@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Button} from "../../../components/Button";
-import {SectionTitle} from "../../../components/SectionTitle";
+import {SectionTitle, StyledH2} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 
@@ -24,15 +24,33 @@ export const Contact = () => {
 
 const StyledSection = styled.section`
     text-align: center;
+    padding-bottom: 93px;
 
     textarea {
         height: 155px;
         resize: none;
     }
     
-    button {
+    Button {
         margin-top: 10px;
     }
+    
+    ${StyledH2} {
+        margin-bottom: 76px;
+    }
+    
+    @media ${theme.media.mobile} {
+        padding: 76px 0 80px;
+        
+        ${StyledH2} {
+            margin-bottom: 57px;
+            
+            &::before {
+                bottom: -20px;
+            }
+        }
+    }
+    
 `
 
 const StyledForm = styled.form`

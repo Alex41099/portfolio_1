@@ -17,8 +17,10 @@ export const GlobalStyled = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        
         color: ${theme.color.font};
         line-height: normal;
+        min-width: 360px;
     }
     
     a {
@@ -46,6 +48,10 @@ export const GlobalStyled = createGlobalStyle`
     
     section {
         padding: 100px 0;
+        
+        @media ${theme.media.mobile} {
+            padding: 80px 0;
+        }
     }
     
 `

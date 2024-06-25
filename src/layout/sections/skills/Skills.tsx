@@ -2,8 +2,9 @@ import React from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Skill} from "./Skill";
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
+import {SectionTitle, StyledH2} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
@@ -43,5 +44,17 @@ export const Skills = () => {
 };
 
 const StyledDiv = styled.section`
-    padding-bottom: 40px;
+    padding: 90px 0 70px;
+    
+    
+    @media ${theme.media.mobile} {
+        padding: 70px 0 17px;
+        
+        ${StyledH2} {
+            
+            &::before {
+                bottom: -22px;
+            }
+        }
+    }
 `

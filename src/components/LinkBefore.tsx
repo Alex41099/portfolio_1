@@ -15,12 +15,12 @@ export const LinkBefore = styled.a`
             content: "";
             display: inline-block;
             height: 10px;
-            width: 130%;
+            width: calc(100% + 20px);
+            transform: translateX(-10px);
             background-color: ${theme.color.accent};
             position: absolute;
             bottom: -5px;
             left: 0;
-            transform: translatex(-12.5%);
             z-index: -1;
 
         }    

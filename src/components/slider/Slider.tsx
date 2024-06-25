@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
 const Text = styled.p`
     font-size: 14px;
     font-weight: 400;
-    margin: 72px 0 22px;
+    margin: 62px 0 14px;
 `
 
 const Name = styled.span`
@@ -38,7 +38,7 @@ const Name = styled.span`
     letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
 `
 
 const Pagination = styled.div`

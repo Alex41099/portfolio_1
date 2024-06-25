@@ -26,6 +26,14 @@ const StyledNav = styled.nav`
         display: flex;
         justify-content: center;
         gap: 40px;
-        margin-bottom: 50px ;
+        margin: 0 auto 50px ;
+        
+        max-width: 352px;
+        width: 100%;
+        
+        @media ${theme.media.mobile} {
+            gap: 30px;
+            margin-bottom: 46px;
+        }
     }
 `
