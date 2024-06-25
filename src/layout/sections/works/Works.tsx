@@ -9,56 +9,41 @@ import {SectionTitle, StyledH2} from "../../../components/SectionTitle";
 import {TabMenu} from "../../tabmenu/TabMenu";
 import {Container} from '../../../components/Container';
 import {theme} from "../../../styles/Theme";
+import { S } from './Works_Styles';
 
 const worksItems = ["ALL", "LANDING PAGE", "REACT", "SPA"]
 
+const work = [
+    {
+        photoProj: photoProj1,
+        title: "Social Network",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+            "tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit" +
+            " amet, consectetur adipisicing elit."
+    },
+    {
+        photoProj: photoProj2,
+        title: "Timer",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
+            "tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit " +
+            "amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim "
+    }
+]
+
 export const Works = () => {
     return (
-        <StyledSection>
+        <S.StyledSection>
             <Container>
                 <SectionTitle title={"My Works"}/>
                 <TabMenu array={worksItems}/>
 
                 <FlexWrapper justify={"space-between"} align={"flex-start"}>
-                    <Work photoProj={photoProj1}
-                          title={"Social Network"}
-                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-                              "tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit" +
-                              " amet, consectetur adipisicing elit."}/>
-                    <Work photoProj={photoProj2}
-                          title={"Timer"}
-                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-                              "tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit " +
-                              "amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim "}/>
+                    {work.map((s, index) => {
+                        return <Work photoProj={s.photoProj} title={s.title} description={s.description}/>
+                    })}
                 </FlexWrapper>
             </Container>
-        </StyledSection>
+        </S.StyledSection>
     );
 };
 
-const StyledSection = styled.section`
-    ${FlexWrapper} {
-        gap: 30px;
-        
-    }
-
-    @media screen and (max-width: 768px) {
-        ${FlexWrapper} {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        ${StyledH2} {
-            &::before {
-                bottom: -20px;
-            }
-            margin-bottom: 74px;
-        }
-        
-        padding: 72px 0 97px;
-    }
-    
-    @media ${theme.media.mobile} {
-        padding: 75px 0 72px;
-    }
-`

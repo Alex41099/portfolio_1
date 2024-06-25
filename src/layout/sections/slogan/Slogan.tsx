@@ -4,26 +4,17 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle, StyledH2} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
 import {theme} from "../../../styles/Theme";
+import { S } from './Slogan_Styles';
 
 export const Slogan = () => {
     return (
-        <StyledSection>
+        <S.StyledSection>
             <FlexWrapper direction={"column"} align={"center"}>
                 <SectionTitle title={"I Am Available For Freelance"}></SectionTitle>
                 <Button>Hire me</Button>
             </FlexWrapper>
-        </StyledSection>
+        </S.StyledSection>
     );
 };
 
-const StyledSection = styled.section`
-    
-    ${StyledH2} {
-        margin-bottom: 78px;
-    }
-
-    @media ${theme.media.mobile} {
-        padding: 68px 0 69px;
-    }
-`
 
