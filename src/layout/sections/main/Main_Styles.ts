@@ -7,8 +7,8 @@ const Main = styled.section`
     min-height: 97vh;
     background-color: #fff5e7;
     display: flex;
-    padding-top: 35px;
-
+    padding-top: 100px;
+    
 
     @media ${theme.media.mobile} {
         min-height: 88vh;
@@ -63,6 +63,7 @@ const Photo = styled.img`
         min-height: 380px;
         
     }
+    
 `
 
 const SmallText = styled.span`
@@ -111,7 +112,8 @@ const Name = styled.h2`
     }
 `
 
-const MainTitle = styled.h1`
+const MainTitle = styled.div`
+    
     ${font({weight: 400, Fmax: 27, Fmin: 20})}
 
     {
@@ -119,6 +121,11 @@ const MainTitle = styled.h1`
             padding-bottom: 34px;
         }
     }
+
+    p {
+        display: none;
+    }
+    
 `
 
 export const S = {

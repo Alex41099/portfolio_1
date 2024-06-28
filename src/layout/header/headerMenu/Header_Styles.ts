@@ -8,6 +8,9 @@ const Nav = styled.nav`
         justify-content: center;
         gap: 30px;
         margin: 13px 0;
+        position: fixed;
+        margin-left: 50%;
+        z-index: 5;
     }
     
     @media ${theme.media.tablet} {
@@ -25,7 +28,11 @@ const MobileNav = styled.nav<{ isOpen: boolean }>`
     display: none;
     
     ul {
-        display: none;
+        a {
+            opacity: 0;
+        }
+        transform: translateY(-100%);
+        transition: 1s;
     }
 
     @media ${theme.media.tablet} {
@@ -33,6 +40,9 @@ const MobileNav = styled.nav<{ isOpen: boolean }>`
 
         ${props => props.isOpen && css<{ isOpen: boolean }>`
             ul {
+                a {
+                    opacity: 1;
+                }
                 background-color: #1F1F20E5;
                 z-index: 999;
                 position: fixed;
@@ -45,6 +55,8 @@ const MobileNav = styled.nav<{ isOpen: boolean }>`
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
+                transform: translateY(0%);
+                
 
                 li a {
                     color: ${theme.color.accent};

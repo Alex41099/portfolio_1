@@ -13,7 +13,7 @@ const worksItems = ["ALL", "LANDING PAGE", "REACT", "SPA"]
 
 export const Works: React.FC = () => {
     return (
-        <S.StyledSection>
+        <S.StyledSection id={"works"}>
             <Container>
                 <SectionTitle title={"My Works"}/>
                 <TabMenu array={worksItems}/>

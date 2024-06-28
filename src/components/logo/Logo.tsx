@@ -1,11 +1,18 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
+import styled from "styled-components";
+import {animateScroll as scroll} from "react-scroll";
 
 export const Logo = () => {
     return (
-        <a href="">
+        <StyledA onClick={() => {scroll.scrollToTop()}}>
             <Icon iconId={"codeSvg"}/>
-        </a>
+        </StyledA>
     );
 };
 
+const StyledA = styled.a`
+    position: fixed;
+    margin-left: 4%;
+    z-index: 5;
+`

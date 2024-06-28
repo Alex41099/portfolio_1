@@ -9,21 +9,27 @@ export const LinkBefore = styled.a`
 
     position: relative;
     z-index: 0;
-    
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: calc(100% + 20px);
+        transform: translateX(-10px);
+        background-color: ${theme.color.accent};
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: -1;
+        transition: ${theme.animation.transition};
+        height: 0px;
+        
+    }
+
     &:hover{
         &::before {
-            content: "";
-            display: inline-block;
             height: 10px;
-            width: calc(100% + 20px);
-            transform: translateX(-10px);
-            background-color: ${theme.color.accent};
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            z-index: -1;
-
-        }    
+        }
     }
     
 `
+

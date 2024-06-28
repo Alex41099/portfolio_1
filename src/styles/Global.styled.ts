@@ -25,7 +25,8 @@ export const GlobalStyled = createGlobalStyle`
     
     a {
         text-decoration: none;
-        color: ${theme.color.font}
+        color: ${theme.color.font};
+        cursor: pointer;
     }
     
     ul {
@@ -37,6 +38,7 @@ export const GlobalStyled = createGlobalStyle`
         border: none;
         color: ${theme.color.font};
         font-family: Poppins, sans-serif;
+        cursor: pointer;
     }
     
     section:nth-of-type(odd) {

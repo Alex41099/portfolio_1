@@ -9,7 +9,7 @@ import {IconWrapper} from "../skills/Skills_Styles";
 
 export const Testimony = () => {
     return (
-        <S.StyledSection>
+        <S.StyledSection id={"testimony"}>
             <Container>
                 <FlexWrapper direction={"column"} align={"center"}>
                     <SectionTitle title={"Testimony"}/>

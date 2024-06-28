@@ -7,8 +7,6 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {theme} from "../../styles/Theme";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 
-const items = ["Home", "Skills", "Works",  "Testimony", "Contact"]
-
 export const Header: React.FC = () => {
     // Переключение между mobileMenu и desktopMenu
     const [width, setWidth] = React.useState(window.innerWidth);
@@ -27,7 +25,7 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify={"space-between"}>
                     <Logo/>
-                    {width < breakpoint? <MobileMenu menuItems={items}/>: <DesktopMenu menuItems={items}/>}
+                    {width < breakpoint? <MobileMenu/>: <DesktopMenu/>}
                 </FlexWrapper>
             </Container>
 
@@ -37,5 +35,6 @@ export const Header: React.FC = () => {
 
 
 const StyledHeader = styled.header`
-    background-color: ${theme.color.primaryBg}
+    background-color: ${theme.color.primaryBg};
+    padding-top: 20px;
 `

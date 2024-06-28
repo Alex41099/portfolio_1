@@ -8,7 +8,7 @@ import { S } from './Contact_Styles';
 
 export const Contact = () => {
     return (
-        <S.StyledSection>
+        <S.StyledSection id={"contact"}>
             <Container>
                 <SectionTitle title={"Contact"}/>
                 <S.StyledForm>
