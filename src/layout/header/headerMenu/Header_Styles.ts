@@ -3,13 +3,12 @@ import {theme} from "../../../styles/Theme";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
 
 const Nav = styled.nav`
+    
     ul {
         display: flex;
         justify-content: center;
         gap: 30px;
         margin: 13px 0;
-        position: fixed;
-        margin-left: 50%;
         z-index: 5;
     }
     
@@ -37,6 +36,7 @@ const MobileNav = styled.nav<{ isOpen: boolean }>`
 
     @media ${theme.media.tablet} {
         display: block;
+        height: 100px;
 
         ${props => props.isOpen && css<{ isOpen: boolean }>`
             ul {

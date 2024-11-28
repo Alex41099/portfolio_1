@@ -16,6 +16,7 @@ const Main = styled.section`
     }
 
     @media ${theme.media.tablet} {
+        padding-top: 0;
         ${FlexWrapper} {
             flex-wrap: wrap;
             justify-content: center;

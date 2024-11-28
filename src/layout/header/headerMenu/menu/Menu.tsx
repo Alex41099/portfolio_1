@@ -47,6 +47,7 @@ export const Menu: React.FC = () => {
     );
 };
 
+
 const StyledA = styled(Link)` // библиотека react-scroll
     position: relative;
     

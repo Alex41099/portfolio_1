@@ -22,19 +22,27 @@ export const Header: React.FC = () => {
 
     return (
         <StyledHeader>
+            <Fixed>
             <Container>
-                <FlexWrapper justify={"space-between"}>
-                    <Logo/>
+                <Logo/>
+                <FlexWrapper justify={"flex-end"}>
                     {width < breakpoint? <MobileMenu/>: <DesktopMenu/>}
                 </FlexWrapper>
             </Container>
-
+            </Fixed>
         </StyledHeader>
     );
 };
 
+const Fixed = styled.div`
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: ${theme.color.primaryBg};
+`
 
 const StyledHeader = styled.header`
     background-color: ${theme.color.primaryBg};
     padding-top: 20px;
+    height: 100px;
 `

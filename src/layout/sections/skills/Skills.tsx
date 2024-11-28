@@ -1,11 +1,10 @@
 import React from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Skill} from "./Skill";
-import styled from "styled-components";
-import {SectionTitle, StyledH2} from "../../../components/SectionTitle";
+import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
-import {theme} from "../../../styles/Theme";
-import { S } from './Skills_Styles';
+import {S} from './Skills_Styles';
+import {Slide} from "react-awesome-reveal";
 
 const skill = [
     {
@@ -51,12 +50,13 @@ export const Skills = () => {
         <S.StyledDiv id={"skills"}>
             <Container>
                 <SectionTitle title={"My Skills"}/>
-
-                <FlexWrapper wrap="wrap">
-                    {skill.map((s, index) => {
-                        return <Skill key={index} iconId={s.iconId} title={s.title} description={s.description}/>
-                    })}
-                </FlexWrapper>
+                <Slide>
+                    <FlexWrapper wrap="wrap">
+                        {skill.map((s, index) => {
+                            return <Skill key={index} iconId={s.iconId} title={s.title} description={s.description}/>
+                        })}
+                    </FlexWrapper>
+                </Slide>
             </Container>
         </S.StyledDiv>
     );
