@@ -13,6 +13,5 @@ export const Logo = () => {
 
 const StyledA = styled.a`
     position: fixed;
-    margin-left: 4%;
     z-index: 5;
 `

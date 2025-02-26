@@ -1,28 +1,61 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import AliceCarousel from "react-alice-carousel";
+import 'react-alice-carousel/lib/alice-carousel.css';
+import "../../layout/sections/testimony/Slider.css"
 
-export const Slider = () => {
-    return (
-        <StyledDiv>
-            <Text>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-            </Text>
-            <Name>@ivan ivanow</Name>
-            <Pagination>
-                <span> </span>
-                <span className={"active"}> </span>
-                <span> </span>
-            </Pagination>
-        </StyledDiv>
-    );
-};
+const items = [
+    <div className="item" data-value="1" style={{cursor: "pointer"}} >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
+                         elit.
+    </div>,
+    <div className="item" data-value="1" style={{cursor: "pointer"}}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit.
+    </div>,
+    <div className="item" data-value="1" style={{cursor: "pointer"}}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit.
+    </div>,
+];
+
+export const Slider = () => (
+    <StyledDiv>
+        <AliceCarousel
+            mouseTracking
+            items={items}
+            disableButtonsControls
+        />
+    </StyledDiv>
+);
+
+// export const Slider = () => {
+//     return (
+//         <StyledDiv>
+//             <Text>
+//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+//                 ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
+//                 elit.
+//             </Text>
+//             <Name>@ivan ivanow</Name>
+//             <Pagination>
+//                 <span> </span>
+//                 <span className={"active"}> </span>
+//                 <span> </span>
+//             </Pagination>
+//         </StyledDiv>
+//     );
+// };
 
 const StyledDiv = styled.div`
     max-width: 500px;
+    width: 100%;
     text-align: center;
+    margin-top: 65px;
 `
 
 const Text = styled.p`

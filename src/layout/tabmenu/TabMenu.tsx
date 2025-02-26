@@ -5,6 +5,8 @@ import {LinkBefore} from "../../components/LinkBefore";
 
 type TabMenuPropsType = {
     array: Array<string>
+    changeWorkItem: (work: string) => void
+    workItem: string
 }
 
 export const TabMenu = (props: TabMenuPropsType) => {
@@ -13,7 +15,8 @@ export const TabMenu = (props: TabMenuPropsType) => {
             <ul>
                 {props.array.map((item, index) => {
                     return <li key={index}>
-                        <LinkBefore href="#">{item}</LinkBefore>
+                        <LinkBefore active={props.workItem === item}
+                            onClick={()=> props.changeWorkItem(item)}>{item}</LinkBefore>
                     </li>
                 })}
             </ul>

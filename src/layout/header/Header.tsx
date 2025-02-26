@@ -43,6 +43,5 @@ const Fixed = styled.div`
 
 const StyledHeader = styled.header`
     background-color: ${theme.color.primaryBg};
-    padding-top: 20px;
     height: 100px;
 `

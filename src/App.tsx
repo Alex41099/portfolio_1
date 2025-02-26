@@ -10,12 +10,22 @@ import {Slogan} from "./layout/sections/slogan/Slogan";
 import {Footer} from "./layout/sections/footer/Footer";
 import {Particle} from "./components/particle/Particle";
 import {GoTopBtn} from "./components/goTopBtn/GoTopBtn";
+import React from "react";
+import {LinearProgress} from "@mui/material";
+import {useSelector} from "react-redux";
+import {RootState} from "./app/store";
 
 
 function App() {
+    const snackbarStatus = useSelector<RootState, boolean>(state => state.app.statusSnackbar)
+
     return (
         // App
         <div className="App">
+            {snackbarStatus &&
+                <Div>
+                    <LinearProgress/>
+                </Div>}
             <Particle/>
             <Header/>
             <Main/>
@@ -26,9 +36,18 @@ function App() {
             <Slogan/>
             <Footer/>
             <GoTopBtn/>
+
         </div>
     );
 }
 
 export default App;
 
+const Div = styled.div`
+    position: fixed;
+    background-color: red;
+    width: 100%;
+    
+    top: 53px;
+    z-index: 9999;
+`

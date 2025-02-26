@@ -39,7 +39,6 @@ const StyledSection = styled.section`
 
 const StyledDiv = styled.div`
     min-width: 330px;
-
     max-width: 540px;
     width: 100%;
 
@@ -155,6 +154,11 @@ const StyledA = styled.a`
 
 `
 
+const Div = styled.div`
+    display: flex;  
+`
+
+
 export const S = {
     StyledSection,
     StyledDiv,
@@ -164,5 +168,6 @@ export const S = {
     StyledH3,
     StyledP,
     StyledA,
+    Div
 
 }

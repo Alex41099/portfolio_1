@@ -15,7 +15,7 @@ const Main = styled.section`
         padding-bottom: 80px;
     }
 
-    @media ${theme.media.tablet} {
+    @media screen and (max-width: 911px) {
         padding-top: 0;
         ${FlexWrapper} {
             flex-wrap: wrap;
@@ -37,11 +37,11 @@ const PhotoWrapper = styled.span`
     &::before {
         content: "";
         position: absolute;
-        width: 360px;
-        height: 470px;
+        width: 380px;
+        height: 430px;
         border: 5px solid ${theme.color.accent};
-        top: -24px;
-        left: 24px;
+        top: -34px;
+        left: 34px;
         z-index: -1;
 
         @media ${theme.media.mobile} {
@@ -55,16 +55,18 @@ const PhotoWrapper = styled.span`
 `
 
 const Photo = styled.img`
-    width: 350px;
+    width: 380px;
     min-height: 430px;
     object-fit: cover;
+    //background-color: rgba(145, 255, 244, 0.84);
+    background-color: rgba(117, 114, 213, 0.89);
 
     @media ${theme.media.mobile} {
         width: 310px;
         min-height: 380px;
-        
+
     }
-    
+
 `
 
 const SmallText = styled.span`
@@ -96,7 +98,7 @@ const Name = styled.h2`
             height: 20px;
             background-color: ${theme.color.accent};
             position: absolute;
-            bottom: 0;
+            bottom: -2.5px;
             z-index: -1;
 
         }

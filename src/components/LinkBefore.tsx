@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {theme} from "../styles/Theme";
 
-export const LinkBefore = styled.a`
+export const LinkBefore = styled.a<{active?: boolean}>`
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -10,6 +10,12 @@ export const LinkBefore = styled.a`
     position: relative;
     z-index: 0;
 
+    &:hover{
+        &::before {
+            height: 10px;
+        }
+    }
+    
     &::before {
         content: "";
         display: inline-block;
@@ -22,14 +28,13 @@ export const LinkBefore = styled.a`
         z-index: -1;
         transition: ${theme.animation.transition};
         height: 0px;
+
+        ${props => props.active && css<{active? :boolean}>`
+         height: 10px;
+        `
         
     }
-
-    &:hover{
-        &::before {
-            height: 10px;
-        }
-    }
+    
     
 `
 

@@ -29,7 +29,7 @@ export const Footer = () => {
     return (
         <S.StyledFooter>
             <FlexWrapper direction={"column"} align={"center"}>
-                <S.StyledH2>Svetlana</S.StyledH2>
+                <S.StyledH2>Alikhan</S.StyledH2>
                 <S.StyledUl>
                     {styledA.map((s, index) => {
                         return <li>
@@ -37,7 +37,7 @@ export const Footer = () => {
                                                     iconId={s.iconId}/></S.StyledA>
                             </li>})}
                 </S.StyledUl>
-                <S.StyledCopyright>© 2023 Svetlana Dyablo, All Rights Reserved.</S.StyledCopyright>
+                <S.StyledCopyright>© 2024 Alikhan Talgat, All Rights Reserved.</S.StyledCopyright>
             </FlexWrapper>
         </S.StyledFooter>
     );
