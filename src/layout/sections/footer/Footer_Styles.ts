@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
     z-index: 1;
     
     padding: 40px 0 40px;
-    background-color: ${theme.color.primaryBg};
+    background-color: ${theme.color.secondaryBg};
     
 `
 
@@ -20,7 +20,7 @@ const StyledH2 = styled.h2`
 const StyledUl = styled.ul`
     display: flex;
     padding: 0 0;
-    margin: 30px 0 30px;
+    margin: 30px 30px 30px 20px;
     gap: 20px;
 
 `

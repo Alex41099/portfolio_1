@@ -56,7 +56,7 @@ const PhotoWrapper = styled.span`
 
 const Photo = styled.img`
     width: 380px;
-    min-height: 430px;
+    height: 430px;
     object-fit: cover;
     //background-color: rgba(145, 255, 244, 0.84);
     background-color: rgba(117, 114, 213, 0.89);

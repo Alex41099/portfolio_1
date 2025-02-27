@@ -7,19 +7,16 @@ import "../../layout/sections/testimony/Slider.css"
 
 const items = [
     <div className="item" data-value="1" style={{cursor: "pointer"}} >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
-                         elit.
+      My goal is to create not just working websites, but intuitive and aesthetic interfaces that benefit users. I believe that high-quality code and attention to detail are the key to a successful project.
+
     </div>,
     <div className="item" data-value="1" style={{cursor: "pointer"}}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit.
+      I strive to become an expert in front-end development and create innovative web applications. I am interested in new technologies and constantly explore new approaches to development.
+
     </div>,
     <div className="item" data-value="1" style={{cursor: "pointer"}}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit.
+      During my work, I successfully implemented several large projects, including the development of an online store and a social network. I constantly improve my skills and keep up with new technologies.
+
     </div>,
 ];
 
@@ -33,64 +30,9 @@ export const Slider = () => (
     </StyledDiv>
 );
 
-// export const Slider = () => {
-//     return (
-//         <StyledDiv>
-//             <Text>
-//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-//                 ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing
-//                 elit.
-//             </Text>
-//             <Name>@ivan ivanow</Name>
-//             <Pagination>
-//                 <span> </span>
-//                 <span className={"active"}> </span>
-//                 <span> </span>
-//             </Pagination>
-//         </StyledDiv>
-//     );
-// };
-
 const StyledDiv = styled.div`
     max-width: 500px;
     width: 100%;
     text-align: center;
     margin-top: 65px;
-`
-
-const Text = styled.p`
-    font-size: 14px;
-    font-weight: 400;
-    margin: 62px 0 14px;
-`
-
-const Name = styled.span`
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 32px;
-`
-
-const Pagination = styled.div`
-    span {
-        display: inline-block;
-        width: 7px;
-        height: 7px;
-
-        & + span {
-            margin-left: 5px;
-        }
-
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    & .active {
-        width: 19px;
-        background-color: ${theme.color.accent};
-    }
-    
 `

@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from "../../../accets/images/imgonline-com-ua-Replace-color-bo2Xq4FdAp2-removebg-preview (1).jpg"
+import photo from "../../../accets/images/avatar (1).png"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from './Main_Styles';

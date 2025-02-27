@@ -8,16 +8,12 @@ import { S } from './Footer_Styles';
 
 const styledA = [
     {
-        href: "#",
-        iconId: "instagramSvg"
-    },
-    {
-        href: "#",
+        href: "https://t.me/Kyrkymbay_Alikhan",
         iconId: "telegramSvg"
     },
     {
-        href: "#",
-        iconId: "vkSvg"
+        href: "https://wa.me/87756265707",
+        iconId: "whatsApp"
     },
     {
         href: "#",

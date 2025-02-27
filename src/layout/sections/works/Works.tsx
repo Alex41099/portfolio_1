@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./Work";
 import photoProj1 from "../../../accets/images/proj-1.webp"
 import photoProj3 from "../../../accets/images/photo_3.png"
+import photoProj4 from "../../../accets/images/inctagram.jpg"
 import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu} from "../../tabmenu/TabMenu";
 import {Container} from '../../../components/Container';
@@ -12,24 +13,28 @@ import {AnimatePresence, motion} from "framer-motion";
 const worksItems = ["ALL", "LANDING PAGE", "REACT", "SPA"]
 const worksArr = [
     {
-        title: "Social Network",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit" +
-            " amet, consectetur adipisicing elit.",
-        photoProj: photoProj1,
-        href: "https://alex41099.github.io/social-network/",
-        github: "https://github.com/Alex41099/social-network",
+        title: "Inctagram",
+        description: "Share the moments of your life, get inspired and find new friends in Inctagram! A simple and user-friendly interface, familiar features and a community where everyone can express themselves.",
+        photoProj: photoProj4,
+        href: "https://samuraichiki.org",
+        github: "https://github.com/samuraichikit/inctagram",
         id: 1
     },
     {
+        title: "Social Network",
+        description: "A mini-social network for those who value simplicity and privacy. Share life's moments and find like-minded people in a cozy online environment",
+        photoProj: photoProj1,
+        href: "https://alex41099.github.io/social-network/",
+        github: "https://github.com/Alex41099/social-network",
+        id: 2
+    },
+    {
         title: "Todo List",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit" +
-            " amet, consectetur adipisicing elit.",
+        description: "Your personal assistant for organizing things. Make task lists, set priorities and achieve your goals!",
         photoProj: photoProj3,
         href: "https://alex41099.github.io/todoList/",
         github: "https://github.com/Alex41099/todoList",
-        id: 2
+        id: 3
     },
 ]
 

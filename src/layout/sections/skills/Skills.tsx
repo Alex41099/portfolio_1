@@ -10,38 +10,32 @@ const skill = [
     {
         iconId: "codeSvg",
         title: "HTML5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        description: "Crafting semantic, accessible markup for cross-browser compatible and high-performance web pages"
     },
     {
         iconId: "css3Svg",
         title: "CSS3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        description: "Advanced styling techniques including Flexbox to create responsive and visually appealing user interfaces"
     },
     {
         iconId: "reactSvg",
         title: "react",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        description: "Developing scalable and interactive user interfaces with a component-based approach and state management"
     },
     {
         iconId: "typescriptSvg",
         title: "typescript",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        description: "Enhancing code reliability and maintainability through strict typing and modern language features"
     },
     {
         iconId: "styledComponentsSvg",
         title: "STYLED COMPONENTS",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        description: "Building styled components with CSS-in-JS for streamlined styling in React applications"
     },
     {
         iconId: "figmaSvg",
         title: "Web Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        description: "Design analysis, extraction of specifications, resources for accurate UI implementation!"
     },
 ]
 

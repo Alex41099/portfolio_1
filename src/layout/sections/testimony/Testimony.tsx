@@ -6,8 +6,6 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
 import { S } from './Testimony_Styles';
 import {IconWrapper} from "../skills/Skills_Styles";
-import styled from "styled-components";
-
 
 
 export const Testimony = () => {

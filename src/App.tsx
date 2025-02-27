@@ -33,7 +33,6 @@ function App() {
             <Works/>
             <Testimony/>
             <Contact/>
-            <Slogan/>
             <Footer/>
             <GoTopBtn/>
 
