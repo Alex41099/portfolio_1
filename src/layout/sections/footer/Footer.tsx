@@ -16,7 +16,7 @@ const styledA = [
         iconId: "whatsApp"
     },
     {
-        href: "#",
+        href: "https://www.linkedin.com/in/alikhan-kyrkymbay-12541033a",
         iconId: "linkedinSvg"
     }
 ]
